@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raju Ahmed Aluminium and Steel Workshop W.L.L</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{
+  --blue:#0f5c54; --blue-d:#0a423d; --orange:#f0a500; --bg:#f4f6f3; --card:#ffffff; --ink:#101626; --muted:#4d5870; --line:#d5dbe6;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0c1614;--card:#14221f;--ink:#eef5f3;--muted:#a3b8b3;--line:#22403a;color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#0c1614;--card:#14221f;--ink:#eef5f3;--muted:#a3b8b3;--line:#22403a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;margin:0;line-height:1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
+
+/* hero */
+.hero{background:#16243a;color:#fff;padding-top:env(safe-area-inset-top,0px)}
+.top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;padding:18px 0}
+.name{font-family:Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.02em;line-height:1.05;color:#fff}
+.name span{display:block}
+.name .n1{font-size:clamp(2.4rem,11vw,4rem)}
+.name .n2{font-size:clamp(1rem,4.6vw,1.9rem);color:var(--orange);white-space:nowrap}
+.call{background:var(--orange);color:#1a1300;font-weight:700;text-decoration:none;padding:10px 18px;border-radius:4px;white-space:nowrap}
+.wa{display:inline-block;background:#25d366;color:#062b14;font-weight:700;text-decoration:none;padding:10px 20px;border-radius:4px}
+.contact .wa{background:#fff;color:#101626;margin-bottom:22px}
+.big{list-style:none;margin:26px 0 0;padding:0}
+.big li{border-top:2px solid rgba(240,165,0,.5)}
+.big a{display:flex;justify-content:space-between;align-items:baseline;gap:14px;text-decoration:none;font-family:Anton,Impact,sans-serif;text-transform:uppercase;font-size:clamp(1.9rem,8vw,3.4rem);line-height:1.02;padding:6px 0}
+.big a small{font-family:"DM Sans",sans-serif;text-transform:none;font-size:.95rem;font-weight:500;opacity:.8;text-align:right;max-width:12rem;line-height:1.3}
+.big a:hover{color:var(--orange)}
+.intro{padding:26px 0 44px;max-width:34rem;font-size:1.1rem;color:#d4ece8}
+
+/* sections */
+section{padding:64px 0}
+.head{display:grid;gap:10px;margin-bottom:28px}
+h2{font-size:clamp(1.8rem,5vw,2.6rem)}
+.head p{margin:0;color:var(--muted);max-width:34rem}
+.tag{display:inline-block;width:56px;height:8px;background:var(--orange)}
+.list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.item{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--orange);padding:22px;border-radius:0}
+.item h3{font-size:1.45rem;margin-bottom:8px;letter-spacing:.01em}
+.item p{margin:0;color:var(--muted);font-size:.97rem}
+
+.kitchen{background:var(--blue);color:#fff}
+.kitchen .head p{color:#d4ece8}
+.kitchen .item{background:var(--blue-d);border-color:rgba(255,255,255,.18);border-left-color:var(--orange)}
+.kitchen .item p{color:#c4e0db}
+.fin{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.fin span{border:1.5px solid rgba(255,255,255,.5);border-radius:4px;padding:6px 16px;font-weight:500}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));counter-reset:s}
+.steps li{counter-increment:s;border-top:4px solid var(--orange);padding-top:14px}
+.steps li::before{content:counter(s);font-family:Anton,sans-serif;font-size:2.4rem;color:var(--blue);line-height:1;display:block;margin-bottom:6px}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .steps li::before{color:#5fd1c4}}
+.steps h3{font-size:1.4rem;margin-bottom:6px}
+.steps p{margin:0;color:var(--muted)}
+
+.contact{background:var(--blue);color:#fff}
+.contact .phone{display:block;font-family:Anton,Impact,sans-serif;font-size:clamp(2.2rem,9vw,3.4rem);line-height:1;text-decoration:none;margin:8px 0 14px}
+.contact address{font-style:normal;font-size:1.1rem;font-weight:500}
+.contact address b{font-weight:700}
+footer{background:#0a2f2b;color:#c8dcd8;padding:20px 0 30px;font-size:.9rem}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) footer{background:#08110f}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="top">
+      <div class="name"><span class="n1">Raju Ahmed</span><span class="n2">Aluminium and Steel Workshop W.L.L</span></div>
+      <a class="call" href="tel:36114071">Call 36114071</a>
+    </div>
+    <ul class="big">
+      <li><a href="#doors">Doors<small>Aluminium doors</small></a></li>
+      <li><a href="#doors">Windows<small>Sliding &amp; fixed</small></a></li>
+      <li><a href="#kitchens">Kitchens<small>Aluminium cabinets</small></a></li>
+      <li><a href="#steel">Steel work<small>Gates, railings, welding</small></a></li>
+      <li><a href="#glass">Glass work<small>Shower, mirrors, railings</small></a></li>
+    </ul>
+    <p class="intro">Made to measure in our own workshop, then installed by our team.<br><br><a class="wa" href="https://wa.me/97336114071">WhatsApp us</a></p>
+  </div>
+</header>
+
+<main>
+<section id="doors">
+  <div class="wrap">
+    <div class="head"><span class="tag"></span><h2>Aluminium doors &amp; windows</h2><p>Slim, durable frames made to the exact size of your openings.</p></div>
+    <div class="list">
+      <div class="item"><h3>Sliding windows</h3><p>Smooth-running frames with single or double glazing.</p></div>
+      <div class="item"><h3>Sliding doors</h3><p>Large glass doors for balconies, patios and living rooms.</p></div>
+      <div class="item"><h3>Hinged doors</h3><p>Aluminium entrance, bathroom and room doors.</p></div>
+      <div class="item"><h3>Fixed &amp; casement windows</h3><p>Fixed glass and opening windows in any size.</p></div>
+      <div class="item"><h3>Glass partitions</h3><p>Office and shop partitions in slim aluminium frames.</p></div>
+      <div class="item"><h3>Shop fronts &amp; screens</h3><p>Shop-front frames and insect screens.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="kitchen" id="kitchens">
+  <div class="wrap">
+    <div class="head"><span class="tag"></span><h2>Aluminium kitchen cabinets</h2><p>Built for humid kitchens. Aluminium resists moisture, termites and warping, and we make every cabinet to fit your space.</p></div>
+    <div class="list">
+      <div class="item"><h3>Waterproof &amp; termite-proof</h3><p>No swelling, rot or insect damage, unlike wood.</p></div>
+      <div class="item"><h3>Made to measure</h3><p>Base units, wall units, tall units, pantry and sink cabinets.</p></div>
+      <div class="item"><h3>Easy to clean</h3><p>Smooth surfaces wipe down quickly and stay hygienic.</p></div>
+      <div class="item"><h3>Glass &amp; handles</h3><p>Aluminium-framed glass doors, soft-close hardware, your choice of handles.</p></div>
+    </div>
+    <div class="fin"><span>Silver</span><span>Graphite</span><span>White</span><span>Wood-grain</span></div>
+  </div>
+</section>
+
+<section id="steel">
+  <div class="wrap">
+    <div class="head"><span class="tag"></span><h2>Steel work</h2><p>Strong, welded and finished in our own workshop.</p></div>
+    <div class="list">
+      <div class="item"><h3>Steel gates</h3><p>Sliding and swing gates for homes, shops and yards.</p></div>
+      <div class="item"><h3>Fences &amp; grilles</h3><p>Boundary fences and window security grilles.</p></div>
+      <div class="item"><h3>Railings &amp; staircases</h3><p>Balcony and stair railings in steel.</p></div>
+      <div class="item"><h3>Structures &amp; canopies</h3><p>Shade structures, car parking sheds and frames.</p></div>
+      <div class="item"><h3>Welding &amp; repairs</h3><p>Repairs to damaged steel and metal items.</p></div>
+      <div class="item"><h3>Custom steel work</h3><p>One-off pieces built to your drawing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="glass" style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><span class="tag"></span><h2>Glass work</h2><p>Cut to size and fitted cleanly by our team.</p></div>
+    <div class="list">
+      <div class="item"><h3>Shower &amp; bathroom glass</h3><p>Shower screens and bathroom glass doors.</p></div>
+      <div class="item"><h3>Glass railings</h3><p>Glass panels for balconies and staircases.</p></div>
+      <div class="item"><h3>Glass doors</h3><p>Frameless and framed glass doors.</p></div>
+      <div class="item"><h3>Mirrors</h3><p>Wall, bathroom and wardrobe mirrors in any size.</p></div>
+      <div class="item"><h3>Table tops &amp; shelves</h3><p>Glass tops and shelves cut to your size.</p></div>
+      <div class="item"><h3>Shop glass</h3><p>Display counters, shop windows and showcases.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="head"><span class="tag"></span><h2>How it works</h2></div>
+    <ol class="steps">
+      <li><h3>Call us</h3><p>Tell us what you need.</p></li>
+      <li><h3>Measure &amp; quote</h3><p>We measure on site and give a clear price.</p></li>
+      <li><h3>Fabricate</h3><p>We cut, weld and finish in our workshop.</p></li>
+      <li><h3>Install</h3><p>Our team fits it and checks every detail.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <h2>Call us</h2>
+    <a class="phone" href="tel:36114071">36114071</a>
+    <a class="wa" href="https://wa.me/97336114071">Chat on WhatsApp</a>
+    <address>
+      <b>Raju Ahmed Aluminium and Steel Workshop W.L.L</b><br>
+      Shop No. A3330, Road No. 360, Hamd Town<br>
+      CR No. 164524
+    </address>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; 2026 Raju Ahmed Aluminium and Steel Workshop W.L.L &middot; CR No. 164524</div></footer>
+</body>
+</html>
